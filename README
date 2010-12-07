@@ -1,0 +1,6 @@
+Global header/footer templates and css shared between Django-powered sites at Mozilla.
+
+The following projects are currently using this code:
+
+Kitsune: https://github.com/jsocol/kitsune/
+Zamboni: https://github.com/jbalogh/zamboni
