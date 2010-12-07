@@ -1,19 +1,9 @@
-#header:after,
-.amo-header:after,
-.header-search form:after {
+#header:after {
     content: ".";
     display: block;
     clear: both;
     height: 0;
     visibility: hidden;
-}
-
-
-@font-face { 
-    font-family: 'MetaBlack';
-    src: url('https://www.mozilla.com/img/fonts/MetaWebPro-Black.woff') format('woff');
-    font-weight: bold; 
-    font-style: normal;
 }
 
 /*----------------------------------
