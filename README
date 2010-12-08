@@ -3,4 +3,12 @@ Global header/footer templates and css shared between Django-powered sites at Mo
 The following projects are currently using this code:
 
 Kitsune: https://github.com/jsocol/kitsune/
-Zamboni: https://github.com/jbalogh/zamboni
+Zamboni: https://github.com/jbalogh/zamboni/
+
+
+Requirements
+^^^^^^^^^^^
+
+* A jinja ``|f`` filter, used to interpolate parameters, like so:
+
+    'visit {0}'|f('<span>mozilla</span>')
