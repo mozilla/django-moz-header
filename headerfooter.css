@@ -292,9 +292,9 @@ body {
     float: right;
     display: block;
     text-align: center;
-    padding-top: 17px;
-    height: 44px;
-    font-size: 18px;
+    padding-top: 20px;
+    height: 37px;
+    font-size: 14px;
     width: 133px;
 }
 
@@ -304,20 +304,6 @@ body {
     background: -moz-radial-gradient(center 45deg, ellipse closest-side, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
     -moz-transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
-}
-
-#header a.mozilla span {
-    background: url(../global/header-logos.png) 1px -73px no-repeat;
-    overflow: hidden;
-    text-indent: -9999px;
-    width: 64px;
-    max-height: 21px;
-    _height: 21px;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: top;
-    zoom: 1;
-    *display: inline;
 }
 
 #nav-access {
