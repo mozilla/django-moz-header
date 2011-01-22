@@ -1,27 +1,39 @@
 /* Adds delay on hiding submenu of header */
 // Use closure to avoid globals
 (function () {
-var HIDE_TIMEOUT = 750,  // hide timeout, in milliseconds
-    SHOWING = 'sfhover', // CSS class for showing submenu
-    showing = null,      // reference to last parent showing its submenu
-    timeout = null;      // reference to timeout event from setTimeout
+var HIDE_TIMEOUT = 500,   // hide timeout, in milliseconds
+    SHOW_TIMEOUT = 300,   // show timeout, in milliseconds
+    SHOWING = 'sfhover',  // CSS class for showing submenu
+    $showing = null,      // reference to last parent showing its submenu
+    h_timeout = null,     // reference to hide event from setTimeout
+    s_timeout = null;     // reference to show event from setTimeout
 
     $('#nav-main > ul > li').mouseover(function () {
+        var on_menu = (null !== $showing);
         // Ensures only one submenu displays
-        if (null !== showing) {
-            showing.removeClass(SHOWING);
-            showing = null;
-            clearTimeout(timeout);
+        if (on_menu) {
+            $showing.removeClass(SHOWING);
+            $showing = null;
+            clearTimeout(h_timeout);
+            clearTimeout(s_timeout);
         }
-        // Fixes drop downs not showing on IE6
-        $(this).addClass(SHOWING);
+        $showing = $(this);
+        // If already on menu, show right away. Else, show with delay. Rhyme!
+        if (on_menu) {
+            $showing.addClass(SHOWING);
+        } else {
+            s_timeout = setTimeout(function () {
+                $showing.addClass(SHOWING);
+            }, SHOW_TIMEOUT);
+        }
     }).mouseout(function () {
-        showing = $(this);
-        showing.addClass(SHOWING);
+        // We're outta here, don't show anything that's been queued.
+        clearTimeout(s_timeout);
+        $showing = $(this);
         // Hide submenu HIDE_TIMEOUT ms
-        timeout = setTimeout(function () {
-            showing.removeClass(SHOWING);
-            showing = null;
+        h_timeout = setTimeout(function () {
+            $showing.removeClass(SHOWING);
+            $showing = null;
         }, HIDE_TIMEOUT);
     });
 }());
