@@ -146,7 +146,7 @@
     opacity: 0;
 }
 
-#nav-main li:hover ul,
+.no-js #nav-main li:hover ul,
 #nav-main li.sfhover ul {
     margin-top: 57px;
     left: 0;
