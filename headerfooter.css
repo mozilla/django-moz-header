@@ -310,6 +310,35 @@ body {
     display: none;
 }
 
+#minimal-header a.mozilla {
+    -moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
+    box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    color: #a0c8da;
+    border-radius: 0 0 6px 6px;
+    margin: 0 0 0 16px;
+    float: right;
+    padding: 5px 14px;
+    line-height: 19px;
+    font-family: georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -6px;
+}
+
+.html-rtl #minimal-header a.mozilla {
+    float: left;
+    margin: 0 16px 0 0;
+}
+
+#minimal-header a.mozilla span {
+    color: #fff;
+}
+
+
 /*----------------------------------
     Footer
 ----------------------------------*/
