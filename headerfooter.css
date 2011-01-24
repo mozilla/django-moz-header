@@ -6,11 +6,6 @@
     visibility: hidden;
 }
 
-body {
-    background: #fff url(../global/background.png) 0 -700px repeat-x;
-    padding-top: 10px;
-}
-
 /*----------------------------------
     Header
 ----------------------------------*/
@@ -179,6 +174,8 @@ body {
     -webkit-transition: none;
 }
 
+.moz-header-slim #nav-main ul li.current a,
+.moz-header-slim #nav-main ul li.current a,
 #nav-main ul li a:hover,
 #nav-main ul li a:active {
     color: #fff;
@@ -310,6 +307,63 @@ body {
     display: none;
 }
 
+/* slim header */
+
+.moz-header-slim #header {
+    height: 40px;
+    -moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
+    box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
+}
+
+.moz-header-slim #header h1 a,
+.moz-header-slim #header h1 a:link,
+.moz-header-slim #header h1 a:visited {
+    height: 40px;
+    width: 95px;
+    background: url(../global/wordmark-slim.png) 15px 4px no-repeat;
+}
+
+.moz-header-slim #header h1 a:hover,
+.moz-header-slim #header h1 a:active {
+    background: -moz-radial-gradient(center 45deg, ellipse closest-side, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),
+        url(../global/wordmark-slim.png) 15px 4px no-repeat;
+}
+
+.moz-header-slim #nav-main ul li.current a,
+.moz-header-slim #nav-main ul li.current span,
+.moz-header-slim #nav-main ul li a,
+.moz-header-slim #nav-main ul li span {
+    padding: 10px 15px 0 15px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.moz-header-slim #nav-main li:hover ul,
+.moz-header-slim #nav-main li.sfhover ul {
+    margin-top: 40px;
+}
+
+.moz-header-slim #nav-main ul li.current {
+    border-bottom: 0;
+    -moz-box-shadow: none;
+}
+
+
+.moz-header-slim #header a.mozilla {
+    font-size: 16px;
+    height: 40px;
+    line-height: 35px;
+    margin-right: 15px;
+    text-align: right;
+    width: auto;
+    padding-top: 0;
+}
+
+/* end slim header */
+
+/* minimal header */
+
 #minimal-header a.mozilla {
     -moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -2px rgba(0,0,0,0.1);
@@ -337,6 +391,8 @@ body {
 #minimal-header a.mozilla span {
     color: #fff;
 }
+
+/* end minimal header */
 
 
 /*----------------------------------
