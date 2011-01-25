@@ -295,6 +295,10 @@
     width: 133px;
 }
 
+#header a.mozilla span {
+    color: #fff;
+}
+
 #header a.mozilla:hover,
 #header a.mozilla:active {
     text-decoration: none;
