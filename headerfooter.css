@@ -175,8 +175,8 @@
     -webkit-transition: none;
 }
 
-.moz-header-slim #nav-main ul li.current a,
-.moz-header-slim #nav-main ul li.current a,
+.moz-header-slim #nav-main ul li.current > a,
+.moz-header-slim #nav-main ul li.current > a,
 #nav-main ul li a:hover,
 #nav-main ul li a:active {
     color: #fff;
@@ -335,8 +335,8 @@
         url(../global/wordmark-slim.png) 15px 4px no-repeat;
 }
 
-.moz-header-slim #nav-main ul li.current a,
-.moz-header-slim #nav-main ul li.current span,
+.moz-header-slim #nav-main ul li.current > a,
+.moz-header-slim #nav-main ul li.current > span,
 .moz-header-slim #nav-main ul li a,
 .moz-header-slim #nav-main ul li span {
     padding: 10px 15px 0 15px;
@@ -349,7 +349,8 @@
     margin-top: 40px;
 }
 
-.moz-header-slim #nav-main ul li.current {
+.moz-header-slim #nav-main ul li.current,
+.moz-header-slim #nav-main ul li.current > a:hover {
     border-bottom: 0;
     -moz-box-shadow: none;
 }
