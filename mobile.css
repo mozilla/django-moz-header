@@ -284,6 +284,10 @@ header #home {
     padding: 14px 0;
     line-height: 14px;
 }
+.no-inlinesvg header #home {
+    background: transparent url(../global/mobile/homeicon.png) no-repeat 0 12px;
+    padding-left: 22px;
+}
 .mini-header .site-title a {
     font-size: 22px;
     line-height: 22px;
@@ -420,6 +424,7 @@ a.listview:before {
 }
 
 #search button[type=submit] {
+    display: block;
     margin: 0;
     height: 45px;
     width: 56px;
@@ -432,6 +437,10 @@ a.listview:before {
     -moz-border-radius: 6px;
     border-radius: 6px;
     vertical-align: middle;
+}
+
+.no-inlinesvg #search button[type=submit] {
+    background: transparent url(../global/mobile/searchbtn.png) no-repeat left top;
 }
 
 /************************************/
