@@ -14,9 +14,12 @@
 {% block copyright %}
 <div id="copyright">
   <p id="footer-links">
+    {% block footer_links %}
     <a href="http://mozilla.com/privacy-policy.html">{{ _('Privacy Policy') }}</a> &nbsp;|&nbsp;
     <a href="http://mozilla.com/about/legal.html">{{ _('Legal Notices') }}</a> &nbsp;|&nbsp;
     <a href="http://mozilla.com/legal/fraud-report/index.html">{{ _('Report Trademark Abuse') }}</a>
+    {% block extra_footer_links %}{% endblock %}
+    {% endblock %}
   </p>
   <p>
     {% trans %}
