@@ -1,4 +1,5 @@
 <ul>
+  {% block feature_links %}
   <li class="first"><a href="http://www.mozilla.com/firefox/features/">{{ _('Features') }}</a>
     <ul>
       <li class="first"><a href="http://www.mozilla.com/firefox/features/">{{ _('Features') }}</a></li>
@@ -9,6 +10,8 @@
       <li class="last"><a href="http://www.mozilla.com/firefox/central/">{{ _('Tour') }}</a></li>
     </ul>
   </li>
+  {% endblock %}
+  {% block mobile_links %}
   <li><a href="http://www.mozilla.com/mobile/">{{ _('Mobile') }}</a>
     <ul>
       <li class="first"><a href="http://www.mozilla.com/mobile/">{{ _('Mobile Overview') }}</a></li>
@@ -22,6 +25,7 @@
       <li class="last"><a href="https://blog.mozilla.com/mobile/">{{ _('Blog') }}</a></li>
     </ul>
   </li>
+  {% endblock %}
   {% block amo_links %}
     <li class=""><a href="https://addons.mozilla.org/">{{ _('Add-ons') }}</a>
       <ul>
@@ -47,6 +51,7 @@
       </ul>
     </li>
   {% endblock %}
+  {% block about_links %}
   <li class="last"><a href="http://www.mozilla.com/about/">{{ _('About') }}</a>
     <ul>
       <li class="first"><a href="http://www.mozilla.com/about/">{{ _('About Firefox') }}</a></li>
@@ -59,4 +64,5 @@
       <li class="last"><a href="http://blog.mozilla.com/">{{ _('Blog') }}</a></li>
     </ul>
   </li>
+  {% endblock %}
 </ul>
