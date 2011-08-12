@@ -1,16 +1,18 @@
 <div id="sub-footer">
   <div id="sub-footer-contents">
-    <h3>{{ _('Let’s be <span>friends!</span>') }}</h3>
-    <ul>
-      <li id="footer-twitter"><a href="http://twitter.com/firefox">{{ _('Twitter') }}</a></li>
-      <li id="footer-facebook"><a href="http://Facebook.com/Firefox">{{ _('Facebook') }}</a></li>
-      <li id="footer-connect"><a href="http://www.mozilla.com/firefox/connect/">{{ _('More Ways to Connect') }}</a></li>
-    </ul>
+    {% block sub_footer %}
+      <h3>{{ _('Let’s be <span>friends!</span>') }}</h3>
+      <ul>
+        <li id="footer-twitter"><a href="http://twitter.com/firefox">{{ _('Twitter') }}</a></li>
+        <li id="footer-facebook"><a href="http://Facebook.com/Firefox">{{ _('Facebook') }}</a></li>
+        <li id="footer-connect"><a href="http://www.mozilla.com/firefox/connect/">{{ _('More Ways to Connect') }}</a></li>
+      </ul>
 
-    <p id="sub-footer-newsletter">
-      <span class="intro">{{ _('Want us to keep in touch?') }}</span>
-      <a href="http://www.mozilla.com/newsletter/">{{ _('Get Monthly News <span>»</span>') }}</a>
-    </p>
+      <p id="sub-footer-newsletter">
+        <span class="intro">{{ _('Want us to keep in touch?') }}</span>
+        <a href="http://www.mozilla.com/newsletter/">{{ _('Get Monthly News <span>»</span>') }}</a>
+      </p>
+    {% endblock %}
   </div>
 </div>
 
@@ -18,86 +20,85 @@
   <div id="footer-contents" role="contentinfo">
     <div id="footer-right">
       {% block lang_switcher %}
-        {% include 'includes/lang_switcher.html' %}
       {% endblock %}
     </div>
 
     <h3 id="footer-logo"><a href="http://www.mozilla.com/firefox/" title="{{ _('Back to home page') }}">{{ _('Firefox') }}</a></h3>
 
-    {# START footer menu #}
+    {# start footer menu #}
     <div id="footer-menu" role="navigation">
       <ul>
         <li>
-          <a href="http://www.mozilla.com/firefox/features/">Desktop</a>
+          <a href="http://www.mozilla.com/firefox/features/">{{ _('Desktop') }}</a>
           <ul>
-            <li><a href="http://www.mozilla.com/firefox/features/">Features</a></li>
-            <li><a href="http://www.mozilla.com/firefox/security/">Security</a></li>
-            <li><a href="http://www.mozilla.com/firefox/performance/">Performance</a></li>
-            <li><a href="http://www.mozilla.com/firefox/customize/">Customization</a></li>
-            <li><a href="http://www.mozilla.com/firefox/technology/">Technology</a></li>
-            <li><a href="http://www.mozilla.com/firefox/video/">Videos</a></li>
-            <li><a href="http://www.mozilla.com/firefox/central/">Tour</a></li>
+            <li><a href="http://www.mozilla.com/firefox/features/">{{ _('Features') }}</a></li>
+            <li><a href="http://www.mozilla.com/firefox/security/">{{ _('Security') }}</a></li>
+            <li><a href="http://www.mozilla.com/firefox/performance/">{{ _('Performance') }}</a></li>
+            <li><a href="http://www.mozilla.com/firefox/customize/">{{ _('Customization') }}</a></li>
+            <li><a href="http://www.mozilla.com/firefox/technology/">{{ _('Technology') }}</a></li>
+            <li><a href="http://www.mozilla.com/firefox/video/">{{ _('Videos') }}</a></li>
+            <li><a href="http://www.mozilla.com/firefox/central/">{{ _('Tour') }}</a></li>
           </ul>
         </li>
 
         <li>
-          <a href="http://www.mozilla.com/mobile/">Mobile</a>
+          <a href="http://www.mozilla.com/mobile/">{{ _('Mobile') }}</a>
           <ul>
-            <li><a href="http://www.mozilla.com/mobile/">Mobile Overview</a></li>
-            <li><a href="http://www.mozilla.com/mobile/download/">Download</a></li>
-            <li><a href="http://www.mozilla.com/mobile/features/">Features</a></li>
-            <li><a href="https://addons.mozilla.org/mobile/?browse=featured">Customize</a></li>
-            <li><a href="http://www.mozilla.com/mobile/sync/">Sync</a></li>
-            <li><a href="https://developer.mozilla.org/mobile">Develop</a></li>
-            <li><a href="http://www.mozilla.com/mobile/getinvolved/">Get Involved</a></li>
-            <li><a href="http://www.mozilla.com/mobile/faq/">FAQ</a></li>
-            <li><a href="https://blog.mozilla.com/mobile/">Blog</a></li>
+            <li><a href="http://www.mozilla.com/mobile/">{{ _('Mobile Overview') }}</a></li>
+            <li><a href="http://www.mozilla.com/mobile/download/">{{ _('Download') }}</a></li>
+            <li><a href="http://www.mozilla.com/mobile/features/">{{ _('Features') }}</a></li>
+            <li><a href="https://addons.mozilla.org/mobile/?browse=featured">{{ _('Customize') }}</a></li>
+            <li><a href="http://www.mozilla.com/mobile/sync/">{{ _('Sync') }}</a></li>
+            <li><a href="https://developer.mozilla.org/mobile">{{ _('Develop') }}</a></li>
+            <li><a href="http://www.mozilla.com/mobile/getinvolved/">{{ _('Get Involved') }}</a></li>
+            <li><a href="http://www.mozilla.com/mobile/faq/">{{ _('FAQ') }}</a></li>
+            <li><a href="https://blog.mozilla.com/mobile/">{{ _('Blog') }}</a></li>
           </ul>
         </li>
 
         <li>
-          <a href="https://addons.mozilla.org/">Add-ons</a>
+          <a href="https://addons.mozilla.org/">{{ _('Add-ons') }}</a>
           <ul>
-            <li><a href="https://addons.mozilla.org/firefox/">Firefox Add-ons</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/featured/">Featured Add-ons</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/extensions/">Extensions</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/themes/">Themes</a></li>
-            <li><a href="http://www.getpersonas.com/">Personas</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/search-tools/">Search Tools</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/language-tools/">Language Support</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/collections/">Collections</a></li>
-            <li><a href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li>
-            <li><a href="https://addons.mozilla.org/firefox/developers/">Developer Hub</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/">{{ _('Firefox Add-ons') }}</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/featured/">{{ _('Featured Add-ons') }}</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/extensions/">{{ _('Extensions') }}</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/themes/">{{ _('Themes') }}</a></li>
+            <li><a href="http://www.getpersonas.com/">{{ _('Personas</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/search-tools/">{{ _('Search Tools') }}</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/language-tools/">{{ _('Language Support') }}</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/collections/">{{ _('Collections') }}</a></li>
+            <li><a href="https://addons.mozilla.org/mobile/">{{ _('Mobile Add-ons') }}</a></li>
+            <li><a href="https://addons.mozilla.org/firefox/developers/">{{ _('Developer Hub') }}</a></li>
           </ul>
         </li>
 
         <li>
-          <a href="http://support.mozilla.com/">Support</a>
+          <a href="http://support.mozilla.com/">{{ _('Support') }}</a>
           <ul>
-            <li><a href="http://support.mozilla.com/kb/">Firefox Support</a></li>
-            <li><a href="http://support.mozilla.com/mobile">Mobile Support</a></li>
-            <li><a href="http://support.mozillamessaging.com/kb/">Thunderbird Support</a></li>
+            <li><a href="http://support.mozilla.com/kb/">{{ _('Firefox Support') }}</a></li>
+            <li><a href="http://support.mozilla.com/mobile">{{ _('Mobile Support') }}</a></li>
+            <li><a href="http://support.mozillamessaging.com/kb/">{{ _('Thunderbird Support') }}</a></li>
           </ul>
         </li>
 
         <li>
-          <a href="http://www.mozilla.com/about/">About</a>
+          <a href="http://www.mozilla.com/about/">{{ _('About') }}</a>
           <ul>
-            <li><a href="http://www.mozilla.com/about/">About Firefox</a></li>
-            <li><a href="http://www.mozilla.org/join">Join Mozilla</a></li>
-            <li><a href="http://www.mozilla.com/about/participate/">Participate</a></li>
-            <li><a href="http://www.mozilla.com/press/">Press Center</a></li>
-            <li><a href="http://www.mozilla.com/about/careers.html">Careers</a></li>
-            <li><a href="http://www.mozilla.com/about/partnerships.html">Partnerships</a></li>
-            <li><a href="http://www.mozilla.com/about/legal.html">Legal</a></li>
-            <li><a href="http://www.mozilla.com/about/contact.html">Contact Us</a></li>
-            <li><a href="http://blog.mozilla.com/">Blog</a></li>
+            <li><a href="http://www.mozilla.com/about/">{{ _('About Firefox') }}</a></li>
+            <li><a href="http://www.mozilla.org/join">{{ _('Join Mozilla') }}</a></li>
+            <li><a href="http://www.mozilla.com/about/participate/">{{ _('Participate') }}</a></li>
+            <li><a href="http://www.mozilla.com/press/">{{ _('Press Center') }}</a></li>
+            <li><a href="http://www.mozilla.com/about/careers.html">{{ _('Careers') }}</a></li>
+            <li><a href="http://www.mozilla.com/about/partnerships.html">{{ _('Partnerships') }}</a></li>
+            <li><a href="http://www.mozilla.com/about/legal.html">{{ _('Legal') }}</a></li>
+            <li><a href="http://www.mozilla.com/about/contact.html">{{ _('Contact Us') }}</a></li>
+            <li><a href="http://blog.mozilla.com/">{{ _('Blog') }}</a></li>
           </ul>
         </li>
 
       </ul>
     </div>
-    {# END footer menu #}
+    {# end footer menu #}
 
     <div id="copyright">
       <p id="footer-links">
