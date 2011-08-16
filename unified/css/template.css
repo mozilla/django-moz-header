@@ -115,10 +115,10 @@ body {
     z-index: 100;
 }
 
-#nav-main ul li a,
-#nav-main ul li a:link,
-#nav-main ul li a:visited,
-#nav-main ul li span {
+#nav-main li a,
+#nav-main li a:link,
+#nav-main li a:visited,
+#nav-main li span {
     padding: 15px 30px 10px 10px;
     height: 18px;
     display: block;
@@ -139,7 +139,7 @@ body {
 #nav-main li:hover a,
 #nav-main li.hover a,
 #nav-main li.hover a:link,
-#nav-main ul li.hover a:visited {
+#nav-main li.hover a:visited {
     box-shadow:
         rgba(152,178,201,0.2) 0 0px 0px,
         inset rgba(255,255,255,0.8) 0 -6px 20px 10px;
@@ -157,8 +157,8 @@ body {
     padding-bottom: 15px;
 }
 
-#nav-main ul li.last a,
-#nav-main ul li.last span {
+#nav-main li.last a,
+#nav-main li.last span {
     border-right-color: transparent;
 }
 
@@ -174,7 +174,7 @@ body {
 
 #nav-main li:hover ul,
 .js #nav-main li.hover ul {
-    margin-top: 42px;
+    margin-top: 47px;
     left: 0;
     opacity: 1;
     -moz-transition: opacity 0.2s ease-in-out;
@@ -399,9 +399,9 @@ body {
     transition: text-shadow 0.1s ease-out;
 }
 
-#footer-twitter  a { background-position: 50% -115px; }
-#footer-facebook a { background-position: 50% -215px; }
-#footer-connect  a { background-position: 50% -315px; }
+#sub-footer ul li#footer-twitter  a { background-position: 50% -115px; }
+#sub-footer ul li#footer-facebook a { background-position: 50% -215px; }
+#sub-footer ul li#footer-connect  a { background-position: 50% -315px; }
 
 #sub-footer-newsletter {
     float: right;
