@@ -44,30 +44,30 @@ $(document).ready(function() {
             $(this).keydown(function(event) {
                 var target;
                 switch (event.keyCode) {
-                case 33: // Page Up
-                case 36: // Home
-                    target = menuitems.first();
-                    break;
-                case 34: // Page Down
-                case 35: // End
-                    target = menuitems.last();
-                    break;
-                case 38: // Up
-                    target = (item_idx > 0) ? menuitems.eq(item_idx - 1)
-                        : menuitems.last();
-                    break;
-                case 40: // Down
-                    target = (item_idx < menuitems.length - 1) ? menuitems.eq(item_idx + 1)
-                        : menuitems.first();
-                    break;
-                case 37: // Left
-                    target = (menu_idx > 0) ? main_menuitems.eq(menu_idx - 1)
-                        : main_menuitems.last();
-                    break;
-                case 39: // Right
-                    target = (menu_idx < main_menuitems.length - 1) ? main_menuitems.eq(menu_idx + 1)
-                        : main_menuitems.first();
-                    break;
+                    case 33: // Page Up
+                    case 36: // Home
+                        target = menuitems.first();
+                        break;
+                    case 34: // Page Down
+                    case 35: // End
+                        target = menuitems.last();
+                        break;
+                    case 38: // Up
+                        target = (item_idx > 0) ? menuitems.eq(item_idx - 1)
+                            : menuitems.last();
+                        break;
+                    case 40: // Down
+                        target = (item_idx < menuitems.length - 1) ? menuitems.eq(item_idx + 1)
+                            : menuitems.first();
+                        break;
+                    case 37: // Left
+                        target = (menu_idx > 0) ? main_menuitems.eq(menu_idx - 1)
+                            : main_menuitems.last();
+                        break;
+                    case 39: // Right
+                        target = (menu_idx < main_menuitems.length - 1) ? main_menuitems.eq(menu_idx + 1)
+                            : main_menuitems.first();
+                        break;
                 }
                 if (target) {
                     target.get(0).focus(); // Sometimes target.focus() doesn't work
@@ -82,3 +82,4 @@ $(document).ready(function() {
     // Now "hide" the duplicated #footer-menu from AT.
     $('#footer-menu').attr('role', 'presentation');
 });
+

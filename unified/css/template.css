@@ -8,7 +8,9 @@ body {
     padding: 0;
 }
 
-#nav-access { display: none; }
+#nav-access {
+    display: none;
+}
 
 #doc {
     width: 980px;
@@ -34,7 +36,9 @@ body {
     min-width: 980px;
 }
 
-.hide { display: none; }
+.hide {
+    display: none;
+}
 
 /* Header */
 
@@ -143,6 +147,12 @@ body {
     box-shadow:
         rgba(152,178,201,0.2) 0 0px 0px,
         inset rgba(255,255,255,0.8) 0 -6px 20px 10px;
+    -moz-box-shadow:
+        rgba(152,178,201,0.2) 0 0px 0px,
+        inset rgba(255,255,255,0.8) 0 -6px 20px 10px;
+    -webkit-box-shadow:
+        rgba(152,178,201,0.2) 0 0px 0px,
+        inset rgba(255,255,255,0.8) 0 -6px 20px 10px;
     -moz-transition: 0.2s linear;
     -moz-transition-property: background, box-shadow, border-right;
     -webkit-transition: 0.2s linear;
@@ -206,6 +216,9 @@ body {
     box-shadow:
         rgba(152,178,201,0.2) 0 2px 0px,
         inset rgba(152,178,201,0.3) 0 -2px 0;
+    -moz-box-shadow:
+        rgba(152,178,201,0.2) 0 2px 0px,
+        inset rgba(152,178,201,0.3) 0 -2px 0;
     -webkit-box-shadow:
         rgba(152,178,201,0.2) 0 2px 0px,
         inset rgba(152,178,201,0.3) 0 -2px 0;
@@ -213,6 +226,10 @@ body {
 
 #nav-main ul ul li {
     box-shadow:
+        inset rgba(152,178,201,0.2) 0 -1px 0 0;
+    -moz-box-shadow:
+        inset rgba(152,178,201,0.2) 0 -1px 0 0;
+    -webkit-box-shadow:
         inset rgba(152,178,201,0.2) 0 -1px 0 0;
     margin-left: 0;
 }
@@ -230,6 +247,8 @@ body {
     border: 0;
     background: none;
     box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     position: relative;
     -moz-transition: background 0.1s ease-in;
     -webkit-transition: background 0.1s ease-in;
@@ -248,6 +267,12 @@ body {
     background: rgb(227,235,244);
     background: rgba(152,178,201,0.2);
     box-shadow:
+        inset rgba(152,178,201,0.3) 0 2px 0px,
+        0 0 3px 2px rgba(152,178,201,.2) inset;
+    -moz-box-shadow:
+        inset rgba(152,178,201,0.3) 0 2px 0px,
+        0 0 3px 2px rgba(152,178,201,.2) inset;
+    -webkit-box-shadow:
         inset rgba(152,178,201,0.3) 0 2px 0px,
         0 0 3px 2px rgba(152,178,201,.2) inset;
     -moz-transition: background 0.1s ease-out;
@@ -269,12 +294,21 @@ body {
 #nav-main ul li.current a:link,
 #nav-main ul li.current a:visited {
     border-bottom-width: 1px;
-    -mozborder-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
     background: #fbfdff;
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.8) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%,
+                                     rgba(255,255,255,0.8) 100%);
     box-shadow:
+        rgba(152,178,201,0.2) 0 0px 0px,
+        inset rgba(152,178,201,0.3) 0 -2px 0,
+        inset rgba(255,255,255,0.8) 0 -6px 6px 4px;
+    -moz-box-shadow:
+        rgba(152,178,201,0.2) 0 0px 0px,
+        inset rgba(152,178,201,0.3) 0 -2px 0,
+        inset rgba(255,255,255,0.8) 0 -6px 6px 4px;
+    -webkit-box-shadow:
         rgba(152,178,201,0.2) 0 0px 0px,
         inset rgba(152,178,201,0.3) 0 -2px 0,
         inset rgba(255,255,255,0.8) 0 -6px 6px 4px;
@@ -289,6 +323,8 @@ body {
 #nav-main ul li.current a:active,
 .js #nav-main ul li.current a:focus {
     box-shadow: none;
+    -moz-box-shadow: none;
+    -webbkit-box-shadow: none;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -301,8 +337,9 @@ body {
 #nav-main ul li.current ul a:visited {
     background: none;
     height: auto;
-    -moz-box-shadow: none;
     box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     padding: 8px 10px;
 }
 
@@ -360,22 +397,22 @@ body {
     color: #fff;
 }
 
-#sub-footer ul {
+.social {
     margin: 100px 0 0 0;
     left: auto;
     float: left;
 }
 
-#sub-footer ul li {
+.social li {
     float: left;
     padding: 0;
     margin: 0 15px 0 0;
     background: none;
 }
 
-#sub-footer ul li a,
-#sub-footer ul li a:link,
-#sub-footer ul li a:visited {
+.social a,
+.social a:link,
+.social a:visited {
     display: block;
     background: url(../img/template/footer-social.png) 50% 0 no-repeat;
     width: 110px;
@@ -390,8 +427,8 @@ body {
     transition: text-shadow 0.2s ease-out;
 }
 
-#sub-footer a:hover,
-#sub-footer a:active {
+.social a:hover,
+.social a:active {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5), 0 0 5px rgba(51,85,155,1), 0 0 20px rgba(255,255,255,0.6);
     -moz-transition: text-shadow 0.1s ease-out;
     -webkit-transition: text-shadow 0.1s ease-out;
@@ -399,9 +436,17 @@ body {
     transition: text-shadow 0.1s ease-out;
 }
 
-#sub-footer ul li#footer-twitter  a { background-position: 50% -115px; }
-#sub-footer ul li#footer-facebook a { background-position: 50% -215px; }
-#sub-footer ul li#footer-connect  a { background-position: 50% -315px; }
+#footer-twitter  a {
+    background-position: 50% -115px;
+}
+
+#footer-facebook a {
+    background-position: 50% -215px;
+}
+
+#footer-connect  a {
+    background-position: 50% -315px;
+}
 
 #sub-footer-newsletter {
     float: right;
@@ -552,7 +597,7 @@ body {
 
 #footer-menu ul ul li {
     float: none;
-    padding: 0 0 0.3em 0;
+    padding: 0 0 .3em 0;
     margin: 0;
     font-weight: normal;
     display: block;
@@ -578,14 +623,18 @@ body {
     font-family: sans-serif;
 }
 
-#lang_form div { display: inline; }
+#lang_form div {
+    display: inline;
+}
 
 #copyright {
     clear: both;
 }
 
 #copyright p {
-    margin-bottom: 0.5em;
+    clear: both;
+    margin-bottom: .5em;
+    padding-top: .5em;
     font-size: 85%;
 }
 
@@ -596,6 +645,19 @@ body {
 
 #footer-links {
     font-size: 85%;
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer-links li {
+    border-right: 1px solid #476FBE;
+    float: left;
+    margin-right: 8px;
+    padding-right: 8px;
+}
+
+#footer-links li.last {
+    border-right: none;
 }
 
 /* Portal Page Footer */
@@ -635,21 +697,27 @@ body {
     background: url(../img/tignish/template/side-menu-divider.png) top center no-repeat;
 }
 
-#side-menu li.first { background: none; }
+#side-menu li.first {
+    background: none;
+}
 
 #side-menu li ul {
     margin: 5px 0 0 0;
     left: auto;
 }
 
-#side-menu li ul li { padding-left: 8px }
+#side-menu li ul li {
+    padding-left: 8px
+}
 
 #side-menu span {
     color: #fff;
     font-weight: bold;
 }
 
-#side-menu h3 span { font-weight: normal; }
+#side-menu h3 span {
+    font-weight: normal;
+}
 
 #side-menu h3 {
     margin: 0;
@@ -702,5 +770,7 @@ body {
 
 /* Larger text for handheld devices */
 @media handheld {
-  #main-content, #main-feature { font-size: 130%; }
+    #main-content, #main-feature {
+        font-size: 130%;
+    }
 }

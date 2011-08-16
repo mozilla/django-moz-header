@@ -2,10 +2,16 @@
   <div id="sub-footer-contents">
     {% block sub_footer %}
       <h3>{{ _('Let’s be <span>friends!</span>') }}</h3>
-      <ul>
-        <li id="footer-twitter"><a href="http://twitter.com/firefox">{{ _('Twitter') }}</a></li>
-        <li id="footer-facebook"><a href="http://Facebook.com/Firefox">{{ _('Facebook') }}</a></li>
-        <li id="footer-connect"><a href="http://www.mozilla.com/firefox/connect/">{{ _('More Ways to Connect') }}</a></li>
+      <ul class="social">
+        <li id="footer-twitter"><a href="http://twitter.com/firefox">
+          {{ _('Twitter') }}
+        </a></li>
+        <li id="footer-facebook"><a href="http://Facebook.com/Firefox">
+          {{ _('Facebook') }}
+        </a></li>
+        <li id="footer-connect"><a href="http://www.mozilla.com/firefox/connect/">
+          {{ _('More Ways to Connect') }}
+        </a></li>
       </ul>
 
       <p id="sub-footer-newsletter">
@@ -23,7 +29,9 @@
       {% endblock %}
     </div>
 
-    <h3 id="footer-logo"><a href="http://www.mozilla.com/firefox/" title="{{ _('Back to home page') }}">{{ _('Firefox') }}</a></h3>
+    <h3 id="footer-logo">
+      <a href="http://www.mozilla.com/firefox/" title="{{ _('Back to home page') }}">{{ _('Firefox') }}</a>
+    </h3>
 
     {# start footer menu #}
     <div id="footer-menu" role="navigation">
@@ -101,11 +109,13 @@
     {# end footer menu #}
 
     <div id="copyright">
-      <p id="footer-links">
-        <a href="http://www.mozilla.com/privacy-policy.html">{{ _('Privacy Policy') }}</a> &nbsp;|&nbsp;
-        <a href="http://www.mozilla.com/about/legal.html">{{ _('Legal Notices') }}</a> &nbsp;|&nbsp;
-        <a href="http://www.mozilla.com/legal/fraud-report/index.html">{{ _('Report Trademark Abuse') }}</a><br/>
-      </p>
+      <ul id="footer-links">
+        <li><a href="http://www.mozilla.com/privacy-policy.html">{{ _('Privacy Policy') }}</a></li>
+        <li><a href="http://www.mozilla.com/about/legal.html">{{ _('Legal Notices') }}</a></li>
+        <li class="last"><a href="http://www.mozilla.com/legal/fraud-report/index.html">
+          {{ _('Report Trademark Abuse') }}
+        </a></li>
+      </ul>
       <p>
         {% trans legal_url='http://www.mozilla.com/about/legal.html#site',
                  license_url='http://creativecommons.org/licenses/by-sa/3.0/' %}
