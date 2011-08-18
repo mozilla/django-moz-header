@@ -436,7 +436,7 @@ body {
     transition: text-shadow 0.1s ease-out;
 }
 
-#footer-twitter  a {
+#footer-twitter a {
     background-position: 50% -115px;
 }
 
@@ -444,7 +444,7 @@ body {
     background-position: 50% -215px;
 }
 
-#footer-connect  a {
+#footer-connect a {
     background-position: 50% -315px;
 }
 
@@ -707,7 +707,7 @@ body {
 }
 
 #side-menu li ul li {
-    padding-left: 8px
+    padding-left: 8px;
 }
 
 #side-menu span {
