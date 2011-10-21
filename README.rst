@@ -1,11 +1,10 @@
+Django-moz-header
+^^^^^^^^^^^^^^^^^
+Because ``{% include "http://mozilla.org/footer.html" %}`` would be naughty
+---------------------------------------------------------------------------
+
 Global header/footer templates and css shared between Django-powered sites
 at Mozilla.
-
-The following projects are currently using this code:
-
-* Kitsune: https://github.com/jsocol/kitsune/
-* Nocturnal: https://github.com/mozilla/nocturnal
-* Zamboni: https://github.com/jbalogh/zamboni/
 
 Out of the box, you get:
 
@@ -25,3 +24,19 @@ Requirements
     'visit {0}'|f('<span>mozilla</span>')
 
 * The JS is optional, but using it requires jQuery; tested with 1.3 or later.
+
+
+In Use By
+^^^^^^^^^
+
+The following projects are currently using this code:
+
+* Kitsune_
+* Nocturnal_
+* Zamboni_
+
+Please add your project to this list if you're using django-moz-header!
+
+.. _Kitsune: https://github.com/jsocol/kitsune
+.. _Nocturnal: https://github.com/mozilla/nocturnal
+.. _Zamboni: https://github.com/jbalogh/zamboni
