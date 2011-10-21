@@ -4,6 +4,7 @@ at Mozilla.
 The following projects are currently using this code:
 
 * Kitsune: https://github.com/jsocol/kitsune/
+* Nocturnal: https://github.com/mozilla/nocturnal
 * Zamboni: https://github.com/jbalogh/zamboni/
 
 Out of the box, you get:
