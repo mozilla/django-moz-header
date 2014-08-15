@@ -53,7 +53,7 @@
 #header h1 a,
 #header h1 a:link,
 #header h1 a:visited {
-    background: url(../global/header-logos.png) 15px 10px no-repeat;
+    background: url(./header-logos.png) 15px 10px no-repeat;
     display: block;
     height: 57px;
     width: 110px;
@@ -68,7 +68,7 @@
                                      ellipse closest-side,
                                      rgba(255,255,255,0.3) 0%,
                                      rgba(255,255,255,0) 100%),
-                url(../global/header-logos.png) 15px 10px no-repeat;
+                url(./header-logos.png) 15px 10px no-repeat;
     -moz-transition: background 0.2s ease-in-out;
 }
 
@@ -326,13 +326,13 @@
 .moz-header-slim #header h1 a:visited {
     height: 40px;
     width: 95px;
-    background: url(../global/wordmark-slim.png) 15px 4px no-repeat;
+    background: url(./wordmark-slim.png) 15px 4px no-repeat;
 }
 
 .moz-header-slim #header h1 a:hover,
 .moz-header-slim #header h1 a:active {
     background: -moz-radial-gradient(center 45deg, ellipse closest-side, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),
-        url(../global/wordmark-slim.png) 15px 4px no-repeat;
+        url(./wordmark-slim.png) 15px 4px no-repeat;
 }
 
 .moz-header-slim #nav-main ul li.current > a,

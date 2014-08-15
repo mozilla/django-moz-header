@@ -3,7 +3,7 @@
 ----------------------------------*/
 
 #footer {
-    background: #33559b url(../global/background.png) 0 0 repeat-x;
+    background: #33559b url(./background.png) 0 0 repeat-x;
     clear: both;
     color: #476FBE;
     display: block;
@@ -15,7 +15,7 @@
 #footer-logo a,
 #footer-logo a:link,
 #footer-logo a:visited {
-    background: url("../global/header-logos.png") no-repeat scroll 15px 10px transparent;
+    background: url("./header-logos.png") no-repeat scroll 15px 10px transparent;
     display: block;
     height: 57px;
     width: 110px;
@@ -30,7 +30,7 @@
                                      ellipse closest-side,
                                      rgba(255,255,255,0.3) 0%,
                                      rgba(255,255,255,0) 100%),
-                url(../global/header-logos.png) 15px 10px no-repeat;
+                url(./header-logos.png) 15px 10px no-repeat;
     -moz-transition: background 0.2s ease-in-out;
 }
 
