@@ -33,10 +33,12 @@ The following projects are currently using this code:
 
 * Kitsune_
 * Nocturnal_
+* Olympia_
 * Zamboni_
 
 Please add your project to this list if you're using django-moz-header!
 
 .. _Kitsune: https://github.com/jsocol/kitsune
 .. _Nocturnal: https://github.com/mozilla/nocturnal
-.. _Zamboni: https://github.com/jbalogh/zamboni
+.. _Olympia: https://github.com/mozilla/olympia
+.. _Zamboni: https://github.com/mozilla/zamboni
